@@ -38,13 +38,7 @@ class MainActivity : AppCompatActivity() {
         navView.setNavigationItemSelectedListener {
             when(it.itemId) {
                 R.id.logsFragment -> navController.navigate(R.id.logsFragment)
-                R.id.mapsFragment ->  {
-                    val fragment = MapsFragment()
-                    val fragmentManager = supportFragmentManager
-                    val fragmentTransaction = fragmentManager.beginTransaction()
-                    fragmentTransaction.replace(R.id.mapsFragment, fragment)
-                    fragmentTransaction.commit()
-                }
+                R.id.mapsFragment -> navController.navigate(R.id.mapsFragment)
                 R.id.homepageFragment -> navController.navigate(R.id.homepageFragment)
                 R.id.FAQFragment -> navController.navigate(R.id.FAQFragment)
                 R.id.aboutFragment -> navController.navigate(R.id.aboutFragment)

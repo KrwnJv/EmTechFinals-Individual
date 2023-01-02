@@ -16,7 +16,7 @@
                     android:icon="@android:drawable/ic_menu_edit"
                     android:title="Logs" />
                 <item
-                    android:id="@+id/SignalApiFragment"
+                    android:id="@+id/mapsFragment"
                     android:icon="@android:drawable/ic_dialog_map"
                     android:title="Track" />
             </group>

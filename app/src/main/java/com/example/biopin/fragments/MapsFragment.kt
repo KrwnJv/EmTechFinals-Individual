@@ -55,6 +55,8 @@ class MapsFragment : Fragment(), OnMapReadyCallback {
 
         viewModelAPI.latLng.observe(this){
             googleMap.addMarker(MarkerOptions().position(it))
+            googleMap.mapType = GoogleMap.MAP_TYPE_SATELLITE
+            googleMap.uiSettings.isMapToolbarEnabled = true
             googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(it, 20f))
             Log.d("test", "$it")
 

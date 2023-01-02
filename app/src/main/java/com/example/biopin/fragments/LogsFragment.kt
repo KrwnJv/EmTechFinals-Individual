@@ -79,6 +79,7 @@ class LogsFragment : Fragment() {
             .setMessage("Are you sure you want to delete this log item?")
             .setCancelable(false)
             .setNegativeButton("No") { _, _ -> }
+//          Delete log
             .setPositiveButton("Yes") { _, _ -> deleteLog(logs) }
             .show()
     }

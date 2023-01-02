@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:background="@drawable/loginbg">
+        android:background="@drawable/cardbg">
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/firstname_layout"
@@ -158,7 +158,7 @@
             android:paddingHorizontal="20dp"
             android:text="Register an account"
             android:textStyle="bold"
-
+            android:textColor="@color/white"
             app:layout_constraintBottom_toTopOf="@+id/firstname_layout"
             app:layout_constraintStart_toEndOf="@+id/imageView" />
 

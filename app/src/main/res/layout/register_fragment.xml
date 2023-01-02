@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".fragments.RegisterFragment">
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/loginbg">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/firstname_layout"
+            android:layout_width="361dp"
+            android:layout_height="69dp"
+            app:boxCornerRadiusTopEnd="30dp"
+            app:layout_constraintBottom_toTopOf="@+id/lastname_layout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <EditText
+                android:id="@+id/firstname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="First name"
+                android:inputType="textPersonName" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/lastname_layout"
+            android:layout_width="361dp"
+            android:layout_height="69dp"
+            app:boxCornerRadiusTopEnd="30dp"
+            app:layout_constraintBottom_toTopOf="@+id/username_layout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <EditText
+                android:id="@+id/lastname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Last name"
+                android:inputType="textPersonName"
+                tools:layout_editor_absoluteX="-16dp"
+                tools:layout_editor_absoluteY="189dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/username_layout"
+            android:layout_width="361dp"
+            android:layout_height="69dp"
+            app:boxCornerRadiusTopEnd="30dp"
+            app:layout_constraintBottom_toTopOf="@+id/password_layout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Username"
+                android:inputType="textPersonName"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="234dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/password_layout"
+            android:layout_width="361dp"
+            android:layout_height="69dp"
+            app:boxCornerRadiusTopEnd="30dp"
+            app:layout_constraintBottom_toTopOf="@+id/confirmPassword_layout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Password"
+                android:inputType="textPassword"
+                tools:layout_editor_absoluteX="-16dp"
+                tools:layout_editor_absoluteY="279dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/confirmPassword_layout"
+            android:layout_width="361dp"
+            android:layout_height="69dp"
+            android:layout_marginBottom="100dp"
+            app:boxCornerRadiusTopEnd="30dp"
+            app:layout_constraintBottom_toTopOf="@+id/cancelButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <EditText
+                android:id="@+id/confirmPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Confirm Password"
+                android:inputType="textPassword"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="324dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/registerButton"
+            android:layout_width="240dp"
+            android:layout_height="60dp"
+            android:layout_marginHorizontal="30dp"
+            android:backgroundTint="@color/teal_200"
+            android:text="Register"
+            app:cornerRadius="45dp"
+            app:layout_constraintBottom_toTopOf="@+id/cancelButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.455"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/cancelButton"
+            android:layout_width="240dp"
+            android:layout_height="60dp"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginBottom="68dp"
+            android:backgroundTint="#F44040"
+            android:text="Cancel"
+            app:cornerRadius="45dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.45"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="53dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginBottom="20dp"
+            android:src="?attr/actionModePasteDrawable"
+            app:layout_constraintBottom_toTopOf="@+id/firstname_layout"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="52dp"
+            android:layout_marginBottom="36dp"
+            android:paddingHorizontal="20dp"
+            android:text="Register an account"
+            android:textStyle="bold"
+
+            app:layout_constraintBottom_toTopOf="@+id/firstname_layout"
+            app:layout_constraintStart_toEndOf="@+id/imageView" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</layout>

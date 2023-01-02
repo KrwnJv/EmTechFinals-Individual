@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".information.AboutFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/mainbg">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="About the developer"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+            app:layout_constraintStart_toEndOf="@+id/imageView6">
+
+        </com.google.android.material.textview.MaterialTextView>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="410dp"
+            android:layout_height="593dp"
+            android:background="@drawable/infoshapebg"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/materialTextView2"
+                android:layout_width="289dp"
+                android:layout_height="103dp"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="19dp"
+                android:justificationMode="inter_word"
+                android:text="@string/about1"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/materialTextView" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/materialTextView"
+                android:layout_width="198dp"
+                android:layout_height="29dp"
+                android:layout_marginStart="104dp"
+                android:justificationMode="inter_word"
+                android:text="@string/jov"
+                android:textColor="@color/purple_700"
+                android:textSize="23sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView8" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="147dp"
+                android:layout_height="159dp"
+                android:layout_marginStart="132dp"
+                android:layout_marginTop="12dp"
+                android:src="@drawable/biomotive_logo"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/materialTextView2" />
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="155dp"
+                android:layout_height="164dp"
+                android:layout_marginStart="128dp"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/jov"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="45dp"
+            android:layout_height="62dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginBottom="2dp"
+            android:src="@android:drawable/ic_dialog_info"
+            app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

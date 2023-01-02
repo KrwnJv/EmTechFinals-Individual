@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/homepageFragment"
+        android:icon="@drawable/biopin_logo"
+        android:title="Home" />
+    <item
+        android:id="@+id/logout"
+        android:icon="@android:drawable/ic_menu_revert"
+        android:title="Logout" />
+    <item android:title="Functions">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/logsFragment"
+                    android:icon="@android:drawable/ic_menu_edit"
+                    android:title="Logs" />
+                <item
+                    android:id="@+id/SignalApiFragment"
+                    android:icon="@android:drawable/ic_dialog_map"
+                    android:title="Track" />
+            </group>
+        </menu>
+    </item>
+    <item android:title="Information">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/FAQFragment"
+                    android:icon="@android:drawable/ic_menu_help"
+                    android:title="FAQ" />
+                <item
+                    android:id="@+id/aboutFragment"
+                    android:icon="@android:drawable/ic_menu_info_details"
+                    android:title="About" />
+            </group>
+        </menu>
+    </item>
+</menu>

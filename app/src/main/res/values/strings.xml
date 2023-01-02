@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">BioPin</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="missing_entries"> Entry missing!</string>
+    <string name="error_password"> Incorrect password!</string>
+    <string name="jov">Kierwin Jov Ramos</string>
+    <string name="faq1">What is the name of your company?\nBioMotive is the name of the company, a portmanteau of biopotential and motive meaning motion through biopotential</string>
+    <string name="faq2">What is the name of your project?\nBioPIn, it means Biopotential Integration. It aims to motorized manual wheelchairs through an attachment kit.</string>
+    <string name="faq3">How the application works?\nThe application takes GPS data from a BioPin unit and tracks it using the GooglePlay Services, specifically Google Maps. Each time a unit, it creates a log in which can be viewed in the logs menu where the user can either update the information, add remarks to each logged item, and/or delete it.</string>
+    <string name="faqtitle">Frequently Asked Questions</string>
+    <string name="about1">A member of BioMotive and is currently a 4th year Computer Engineering student at Technological Institute of the Philippines - Quezon City.</string>
+</resources>
